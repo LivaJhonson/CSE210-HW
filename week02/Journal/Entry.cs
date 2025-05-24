@@ -14,6 +14,6 @@ public class Entry
     {
         Console.WriteLine($"Date: {_date} - Prompt: {_promptText}");
         Console.WriteLine($"{_responseText}");
-        Console.WriteLine(); // Add an empty line for better readability between entries
+        Console.WriteLine(); // EXCEEDING REQUIREMENTS: Added for better readability between entries.
     }
 }

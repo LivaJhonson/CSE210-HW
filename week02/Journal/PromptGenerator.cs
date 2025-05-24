@@ -12,6 +12,8 @@ public class PromptGenerator
     /// </summary>
     public PromptGenerator()
     {
+        // EXCEEDING REQUIREMENTS: More than 5 prompts are included here.
+        // This provides more variety for the user, enhancing the journaling experience.
         _prompts = new List<string>()
         {
             "Who was the most interesting person I interacted with today?",
@@ -19,8 +21,8 @@ public class PromptGenerator
             "How did I see the hand of the Lord in my life today?",
             "What was the strongest emotion I felt today?",
             "If I had one thing I could do over today, what would it be?",
-            "What was something new you learned today?", // Exceeding requirements
-            "What is one thing you are grateful for today?", // Exceeding requirements
+            "What was something new you learned today?",
+            "What is one thing you are grateful for today?",
             "Describe a challenge you faced today and how you overcame it.",
             "What is a goal you have for tomorrow?"
         };
