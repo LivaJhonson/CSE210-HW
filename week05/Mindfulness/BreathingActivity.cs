@@ -30,12 +30,11 @@ public class BreathingActivity : Activity
             Console.Write("Now breathe out...");
             ShowCountDown(6); // Breathe out for 6 seconds
             
-            // Optional: A short pause between cycles if you want
-            // if ((DateTime.Now - startTime).TotalSeconds < _duration)
-            // {
-            //     Console.WriteLine();
-            //     ShowSpinner(2); // Pause for 2 seconds between cycles
-            // }
+            if ((DateTime.Now - startTime).TotalSeconds < _duration)
+            {
+                 Console.WriteLine();
+                 ShowSpinner(2); // Pause for 2 seconds between cycles
+            }
         }
 
         DisplayEndingMessage(); // Call base class method to display end message

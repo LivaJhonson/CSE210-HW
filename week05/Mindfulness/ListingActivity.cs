@@ -1,7 +1,6 @@
 // ListingActivity.cs
 using System;
 using System.Collections.Generic; // Required for List<string>
-using System.Linq; // Not strictly needed for this current implementation, but often useful with Lists
 
 public class ListingActivity : Activity
 {
@@ -53,9 +52,6 @@ public class ListingActivity : Activity
         List<string> userList = new List<string>();
         DateTime startTime = DateTime.Now;
         
-        // No explicit message like "Start listing items:" here, as the prompt is already given.
-        // The user just starts typing.
-
         // Loop for the duration, collecting input line by line
         while ((DateTime.Now - startTime).TotalSeconds < _duration)
         {

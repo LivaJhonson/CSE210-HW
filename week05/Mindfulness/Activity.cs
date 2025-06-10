@@ -74,7 +74,7 @@ public class Activity
             Console.Write("\b \b"); // Erase the character: \b is backspace
             i = (i + 1) % spinner.Length; // Cycle through spinner characters
         }
-        // Console.WriteLine(); // Optionally add a new line after spinner if needed
+        Console.WriteLine(); // New line after spinner completes
     }
 
     public void ShowCountDown(int seconds)
@@ -85,6 +85,6 @@ public class Activity
             Thread.Sleep(1000); // Pause for 1 second
             Console.Write("\b \b"); // Erase the character: \b is backspace
         }
-        // Console.WriteLine(); // Optionally add a new line after countdown if needed
+        // Console.WriteLine(); // Optionally add a new line after countdown if not followed by other output
     }
 }
